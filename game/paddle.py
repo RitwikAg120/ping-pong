@@ -3,7 +3,7 @@ import pygame
 class Paddle:
     def __init__(self, x, y, width, height):
         self.x = x
-        self.y = float(y)
+        self.y = y
         self.width = width
         self.height = height
         self.speed = 7
@@ -13,14 +13,10 @@ class Paddle:
         self.y = max(0, min(self.y, screen_height - self.height))
 
     def rect(self):
-        return pygame.Rect(int(self.x), int(self.y), self.width, self.height)
+        return pygame.Rect(self.x, self.y, self.width, self.height)
 
     def auto_track(self, ball, screen_height):
-        paddle_center = self.y + self.height / 2
-        ball_center = ball.y + ball.height / 2
-
-        # small deadzone to reduce jitter
-        if ball_center < paddle_center - 5:
+        if ball.y < self.y:
             self.move(-self.speed, screen_height)
-        elif ball_center > paddle_center + 5:
+        elif ball.y > self.y + self.height:
             self.move(self.speed, screen_height)
