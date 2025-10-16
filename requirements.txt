@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 pygame
 numpy
+=======
+pygame
+numpy
+>>>>>>> 112c8e72b6f78cbac57a26234334036728a5ab7e
