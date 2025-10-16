@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pygame
 from game.game_engine import GameEngine
 
@@ -40,7 +39,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-=======
+
 import pygame
 from game.game_engine import GameEngine
 
@@ -82,4 +81,3 @@ def main():
 
 if __name__ == "__main__":
     main()
->>>>>>> 112c8e72b6f78cbac57a26234334036728a5ab7e
