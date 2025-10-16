@@ -14,7 +14,7 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
 # Clock
-clock = pygame.time.Clock()
+
 FPS = 60
 
 # Game loop
